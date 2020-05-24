@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h3>Atributo Value</h3>
+    <form action="lbarros.andre@gmail.com" method="GET">
+        <p><font face="calibri">
+            Nome: <input type=text name="nome" size="25" maxlength="50">
+        </p>
+        <p>
+            Estado: <input type=text name="uf" size="2" value="SP"
+            </font>
+        </p>
+    </form>
+    <br>
+    <h3>Campo Senha</h3>
+    <form action="lbarros.andre@gmail.com" method="GET">
+        <p><font face="Calibri">
+            Nome: <input type="text" name="nome" size="25" maxlength="50">
+        </p>
+        <p>
+            Nº do cartão de crédito <input type="text" name="num_cartao" size="16">  
+        </p>
+        <p>
+            Senha: <input type=password name="senha" size="6">
+        </p>
+        <p>Selecione a bandeira do cartão de crédito:<br>
+            <input type="radio" name="vi" checked>VISA<br>
+            <input type="radio" name="mst">MASTERCARD
+        </p>
+        <p>Selecione o horário de entrega:<br>
+            <input type="checkbox" name="horario1" size="1">8h às 12h<br>
+            <input type="checkbox" name="horario2" size="1">13h às 15h<br>
+            <input type="checkbox" name="horario3" size="1">16h às 18h 
+        </p>
+        <p>Área de texto:<br>
+            Endereço:<input type="text" name="end" size="30">
+        </p>
+        <p>
+            Referência:<textarea name="ref" rows="2" cols="40"></textarea>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <input type="hidden" name="cpf" value="verdadeiro">
+    </form>
+    <h3>Lista de opções</h3>
+    <h4>Escolha a cidade que deseja conhecer</h4>
+    <form>
+        <select name="cidades" size="4">
+            <option>Londre
+            <option>Paris
+            <option>Roma
+            <option>Madri  
+        </select>
+    </form>
+    <h3>Menu de opções</h3>
+    <h4>Escolha a cidade que deseja conhecer</h4>
+    <form>
+        <select name="cidades">
+            <option>Londre
+            <option>Paris
+            <option>Roma
+            <option>Madri
+        </select>
+    </form>
+</body>
+</html>
